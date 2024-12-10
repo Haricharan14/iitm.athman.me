@@ -1,0 +1,120 @@
+/* Body styling */
+body {
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(135deg, #1e1e2f, #3b3b58);
+    font-family: 'Cascadia Code', monospace;
+    color: #ffffff;
+    background-image: url('shattered--dark--1920x1080.png');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Top bar styling */
+.top-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px 20px;
+    z-index: 1000;
+}
+
+/* Logo Styling */
+.logo {
+    height: 40px;
+    cursor: pointer;
+}
+
+.logo:before {
+    content: 'Athman';
+    font-family: 'Dancing Script', cursive;
+    font-size: 24px;
+    color: white;
+    display: block;
+    line-height: 40px;
+}
+
+/* About Link Styling */
+.about {
+    font-size: 1.2em;
+    color: white;
+    text-decoration: none;
+    text-align: right;
+    margin-right: 10px;
+}
+
+/* Glass container for levels */
+.level-container {
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 20px 20px 30px 20px;
+    width: 90%;
+    max-width: 750px;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Level title styling */
+.level-title {
+    font-size: 1.8em;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Glass container for subjects */
+.subject-container {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 15px;
+    padding: 0px 0px;
+    width: 100%; 
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    font-family: 'Cascadia Code', monospace;
+}
+
+/* Subject list styling */
+.subject-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%; 
+}
+
+.subject-item {
+    display: block; /* Makes the subject take full width */
+    width: 98%; /* Full width relative to the subject container */
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    transition: background 0.3s ease;
+    text-align: left;/* Left-align the subject names */
+    padding-left: 15px; /* Add gap from the left */ 
+}
+
+.subject-item:last-child {
+    border-bottom: none; /* Remove border for last item */
+}
+
+.subject-item:hover {
+    background: rgba(255, 255, 255, 0.1);
+    width: 98%;
+
+}
